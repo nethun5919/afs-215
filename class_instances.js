@@ -1,9 +1,13 @@
 
 module.exports = class Instances{
 constructor(num){
-  this.num = num
+ 
+    this.num = num
+  
+ 
 }
   main(){
+    if(typeof this.num === "number"){
     if (this.num == 3)
       return "Good Morning"
     else if (this.num ==7)
@@ -16,5 +20,9 @@ constructor(num){
       return "Good Afternoon"
     else
       return this.num.toString()
+}
+else{
+  return "Try again with a number"
+}
   }
 }
